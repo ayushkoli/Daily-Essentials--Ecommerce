@@ -1,2 +1,2 @@
 # Daily-Essentials--Ecommerce
-This a ecommerce website for personal use 
+This is a ecommerce website for personal use where i have implemented all concepts of html and css
