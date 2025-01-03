@@ -1,0 +1,254 @@
+body {
+    width: 100%;
+    background-image: linear-gradient(135deg, #2a4d77 0%, #003c5e 100%);
+    font-family: Arial, sans-serif;
+    color: #fff;
+
+    background-size: cover;
+    padding-top: 95px;
+    margin: 0;
+
+
+
+}
+
+.section {
+    background-image: linear-gradient(90deg, #005a81 0%, #00375d 100%);
+
+
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* Main Title */
+.maintitle {
+    background-image: linear-gradient(90deg, #4e91c8 0%, #67a8d1 100%);
+    color: #ffffff;
+    letter-spacing: 4px;
+
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 70px 0;
+    margin: 20px 0;
+    width: 100%;
+    letter-spacing: 1px;
+
+
+    cursor: pointer;
+    transition: text-shadow 0.7s;
+    padding-bottom: 95px;
+    
+}
+
+.maintitle:hover::after {
+    transform: scale(1);
+}
+
+.maintitle::after {
+
+    
+    content: "🔽AMAZON AND FLIPKART LINKS🔽";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transform: scale(0);
+    transition: transform 1s;
+    transform-origin: center;
+}
+
+/* Products Grid */
+.products {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.product {
+    background-image: linear-gradient(135deg, #5db8ff 0%, #b0e0f3 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.images {
+
+    border-radius: 20px;
+    padding: 5px;
+    /* width: auto;
+    height: auto; */
+    height: 256.77px;
+    transition: transform 0.4s;
+
+}
+
+.images:hover{
+    transform: translateY(-2px);
+
+
+}
+
+.imagesal {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+.amazonbutton,
+.flipkart {
+
+
+    display: block;
+    text-align: center;
+    height: 40%;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: box-shadow 0.5s, transform 0.3s;
+    cursor: pointer;
+}
+
+.amazonbutton {
+
+    background-color: #ffa41c;
+    color: black;
+    border: none;
+}
+
+.amazonbutton:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.flipkart {
+    background-color: #fb641b;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    
+    
+}
+
+.flipkart:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Info Text */
+.info {
+    padding: auto;
+    height: 50px;
+    /*-----------------------    */
+
+    margin: 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color:#212121 ;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+.info:hover {
+    
+    color: #000; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the element */
+    text-shadow: none; /* Remove text shadow for clarity */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .maintitle {
+        font-size: 24px;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .amazonbutton,
+    .flipkart {
+        width: 90%;
+    }
+}
+
+
+.skin{
+    
+    background-image: linear-gradient(90deg, #2a5f8a 0%, #1e486a 100%);
+    
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    
+
+    text-align: center;
+    
+    
+    padding: 10px 0;
+    margin: 20px 0;
+    width: 100%;
+    
+
+
+    cursor: pointer;
+    transition: text-shadow 0.7s;
+    padding-bottom: 10px;
+
+}
+
+    .subtext {
+        font-size: 18px; 
+        font-weight: 600; 
+        font-family: 'Arial', sans-serif; 
+        color: #dad9d9; 
+        text-align: center; 
+        text-transform: uppercase; 
+        letter-spacing: 6px; 
+        margin: 10px 0; 
+        line-height: 1.5; 
+        transition: color, 0.4s;
+        transition: text-shadow, 0.4s;
+    }
+    
+
+    
+    
+    .subtext:hover {
+        color: #00bcd4; /* Light Blue color on hover */
+        text-shadow: 0 0 10px rgba(0, 188, 212, 0.8), 0 0 20px rgba(0, 188, 212, 0.6); /* Blue glow shadow */
+    }
+    
+    
+    
+    
+

@@ -1,0 +1,104 @@
+/* General Reset */
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(180deg, #1e3a5f 0%, #0c2c45 100%);
+  color: #fff;
+  border-bottom: 3px solid #004d75;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.logo img {
+
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.toptext {
+  padding-left: 18px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f9f9f9;
+  flex: 2;
+}
+
+.sidetext {
+  flex: 1;
+  text-align: right;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.other {
+  display: flex;
+  gap: 20px;
+}
+
+.list .text {
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.list .text:hover {
+  color: #ffcc00;
+}
+
+.hamburger {
+  display: none;
+  /* Hidden by default, visible in responsive mode */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .other {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .other.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
